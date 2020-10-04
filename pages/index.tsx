@@ -1,6 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import PageWithLayoutType from '../types/pageWithLayout'
+
+import MainLayout from '../layouts/mainLayout'
 
 const Home: React.FC = () => {
   return (
@@ -64,5 +67,7 @@ const Home: React.FC = () => {
     </div>
   )
 }
+
+;(Home as PageWithLayoutType).layout = MainLayout
 
 export default Home

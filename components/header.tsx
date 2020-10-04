@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ isMain }) => {
         <div className={styles.header}>
             <a href="#default" className={styles.logo}>CompanyLogo</a>
             <div className={styles.headerRight}>
-                { isMain &&  <a className={styles.active} href="#home">Go to secondary</a> }
+                { isMain &&  <a className={styles.active} href="/secondary-page">Go to secondary</a> }
             </div>
         </div>
     )

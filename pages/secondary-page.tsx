@@ -1,6 +1,9 @@
 import React from 'react'
+import PageWithLayoutType from '../types/pageWithLayout'
 
-const SecondarPage: React.FC = () => {
+import SecondaryLayout from '../layouts/secondaryLayout'
+
+const SecondaryPage: React.FC = () => {
     return (
         <div>
             This is the secondary page
@@ -8,4 +11,8 @@ const SecondarPage: React.FC = () => {
     )
 }
 
-export default SecondarPage
+
+
+;(SecondaryPage as PageWithLayoutType).layout = SecondaryLayout 
+
+export default SecondaryPage
